@@ -1,12 +1,12 @@
-.App {
+.home {
   text-align: center;
 }
 
-.App-logo {
+.home-logo {
   height: 40vmin;
 }
 
-.App-header {
+.home-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -17,6 +17,6 @@
   color: white;
 }
 
-.App-link {
+.home-link {
   color: #09d3ac;
 }
