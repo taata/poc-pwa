@@ -1,50 +1,57 @@
 import React from 'react';
 
-
-// import WomanFlyingBallon from './images/woman-flying-ballon.svg';
-// import IconCloud from './images/cloud.svg';
-// import IconBrilant from './images/brilant.svg';
-// import IconShop from './images/shop.svg';
-// import IconRocket from './images/rocket.svg';
+import { ReactComponent as  WomanFlyingBallon } from './images/woman-flying-ballon.svg';
+import { ReactComponent as IconCloud } from './images/cloud.svg';
+import { ReactComponent as IconRocket } from './images/rocket.svg';
+import { ReactComponent as IconBrilant } from './images/brilant.svg';
+import { ReactComponent as IconShop } from './images/shop.svg';
 import './home.css';
 
-export default function Home() {
-  return (
-   <div className="pwa-lp-header-gate">
-      <div className="pwa-lp-cartoon">
-        <div className="pwa-lp-cartoon-clouds">
-          {/* <IconCloud />
-          <IconCloud />
-          <IconCloud />
-          <IconCloud /> */}
-        </div>
-        <div className="pwa-lp-cartoon__woman-flying">
-          {/* <WomanFlyingBallon /> */}
-          <span className="pwa-lp-cartoon__shadow" />
-        </div>
-      </div>
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', e => {
+  deferredPrompt = e;
+  console.log(deferredPrompt)
+});
 
-      <h1 className="pwa-lp-header__heading">aa header</h1>
-      <div className="pwa-lp-header-items">
-        <h2 className="pwa-lp-header-items__item">
-          {/* <IconRocket /> */}
-         a
-        </h2>
-        <h2 className="pwa-lp-header-items__item">
-          {/* <IconBrilant /> */}
-        b
-        </h2>
-        <h2 className="pwa-lp-header-items__item">
-          {/* <IconShop /> */}
-       c
-        </h2>
-      </div>
+const callPWA = () => {
+ console.log({deferredPrompt});
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    // deferredPrompt.userChoice.then(choiceResult => {
+    //   const { outcome } = choiceResult;
+    // });
+  } else{
+    return console.log('Navegador não suporta :{')
+  }
+}
+const Home = () => {
+ 
+  return (
+   <div className="pwa">
+    <div className="pwa__cloud">
+      <IconCloud />
+      <IconCloud />
+      <IconCloud />
+      <IconCloud />
+      <IconCloud />
+    </div>
+      <h1 className="pwa-title"> Bem vindo ao Tech Summit</h1>
+      <span className="pwa__woman-fly"> <WomanFlyingBallon /> </span>
+      <h3 className="pwa-description"> O app do iFood mais leve que uma selfie </h3>
+      <div className="pwa__list">
+        <span className="pwa__rocket"> <IconRocket /> </span> <h4> Ocupa só 280 KB no seu Android </h4>
+        <IconBrilant />  <h4> Consome menos dados do seu 4G </h4>
+        <IconShop /> <h4> Instalação rápida e descomplicada </h4>
+     </div>
       <button
-            label='Instale agora'
-            onClick=''
-            variant="pwa-lp__install-button"
-          />
-          </div>
+        label='Instale agora'
+        onClick={() => callPWA()}
+        variant="pwa__install-button"
+      >
+        Clique 
+      </button>
+    </div>
   );
 }
 
+export default Home;

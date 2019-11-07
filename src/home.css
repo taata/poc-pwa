@@ -1,22 +1,139 @@
-.home {
+body {
+  font-family: "SulSans", Helvetica, sans-serif;
+  margin: 0;
+}
+
+.pwa {
+  background-color: #f2f2f2;
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  padding: 20px 20px;
+  display: grid;
+  grid-template-rows: 10% 184px 15% 30% 48px;
+  grid-gap: 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+.pwa__cloud {
+  top: 10px;
+  position: absolute;
+  width: 100%;
+}
+
+.pwa__cloud>* {
+  position: absolute;
+}
+
+.pwa__cloud>svg:nth-child(1) {
+  top: -40px;
+  width: 60px;
+  animation: 11s pwa-moveclouds infinite ease-in;
+}
+
+.pwa__cloud>svg:nth-child(2) {
+  top: 0;
+  animation: 12s pwa-moveclouds infinite ease-in;
+}
+
+.pwa__cloud>svg:nth-child(3) {
+  top: 40px;
+  width: 60px;
+  animation: 9s pwa-moveclouds infinite ease-in;
+}
+
+.pwa__cloud>svg:nth-child(4) {
+  top: 80px;
+  animation: 14s pwa-moveclouds infinite ease-in;
+}
+
+.pwa__cloud>svg:nth-child(5) {
+  top: 140px;
+  animation: 10s pwa-moveclouds infinite ease-in;
+}
+
+.pwa__cloud svg {
+  width: 44px;
+  color: rgba(255, 187, 197, 0.6);
+  fill: rgba(255, 187, 197, 0.6);
+}
+
+.pwa__rocket svg {
+  color: #3e3e3e;
+  fill: #3e3e3e;
+}
+
+.pwa__woman-fly svg {
+  height: 240px;
+  margin: 0 auto;
+  display: block;
+  animation: 9s pwa-woman infinite linear;
+}
+
+.pwa__list {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 32px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.pwa__list h4 {
+  font-size: 14px;
+  font-weight: 100;
+  color: #717171;
+}
+
+.pwa-title {
+  font-size: 22px;
+  padding: 20px;
+  display: block;
   text-align: center;
+  font-weight: bold;
+  color: #ea1d2c;
 }
 
-.home-logo {
-  height: 40vmin;
+.pwa-description {
+  text-align: center;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 26px;
 }
 
-.home-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.pwa button {
+  background-color: #ea1d2c;
+  width: 100%;
+  display: grid;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border: 0;
+  border-radius: 9px;
 }
 
-.home-link {
-  color: #09d3ac;
+@keyframes pwa-moveclouds {
+  0% {
+    left: -150px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes pwa-woman {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
