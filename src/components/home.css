@@ -120,6 +120,7 @@ body {
 .pwa button {
   background-color: #c00f1c;
   width: 100%;
+  max-width: 300px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -129,7 +130,7 @@ body {
   padding: 10px;
   border: 0;
   border-radius: 9px;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 @keyframes pwa-moveclouds {
