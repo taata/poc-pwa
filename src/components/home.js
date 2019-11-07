@@ -14,12 +14,8 @@ window.addEventListener('beforeinstallprompt', e => {
 });
 
 const callPWA = () => {
- console.log({deferredPrompt});
   if (deferredPrompt) {
     deferredPrompt.prompt();
-    // deferredPrompt.userChoice.then(choiceResult => {
-    //   const { outcome } = choiceResult;
-    // });
   } else{
     return console.log('Navegador não suporta :{')
   }
@@ -35,13 +31,18 @@ const Home = () => {
       <IconCloud />
       <IconCloud />
     </div>
-      <h1 className="pwa-title"> Bem vindo ao Tech Summit</h1>
-      <span className="pwa__woman-fly"> <WomanFlyingBallon /> </span>
-      <h3 className="pwa-description"> O app do iFood mais leve que uma selfie </h3>
+      <h1 className="pwa-title"> Bem vindo ao<br/> Tech Summit</h1>
+      <span className="pwa__woman-fly"> 
+        <WomanFlyingBallon /> 
+      </span>
+      <h3 className="pwa-description"> O app do iFood<br/> mais leve que uma selfie </h3>
       <div className="pwa__list">
-        <span className="pwa__rocket"> <IconRocket /> </span> <h4> Ocupa só 280 KB no seu Android </h4>
-        <IconBrilant />  <h4> Consome menos dados do seu 4G </h4>
-        <IconShop /> <h4> Instalação rápida e descomplicada </h4>
+        <span className="pwa__icon-list"> <IconRocket /> </span>
+        <h4> Ocupa só 280 KB no seu Android </h4>
+        <span className="pwa__icon-list"> <IconBrilant /> </span>
+        <h4> Consome menos dados do seu 4G </h4>
+        <span className="pwa__icon-list"> <IconShop /> </span> 
+        <h4> Instalação rápida e descomplicada </h4>
      </div>
       <button
         label='Instale agora'
