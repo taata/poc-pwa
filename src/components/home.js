@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { ReactComponent as  WomanFlyingBallon } from './images/woman-flying-ballon.svg';
-import { ReactComponent as IconCloud } from './images/cloud.svg';
-import { ReactComponent as IconRocket } from './images/rocket.svg';
-import { ReactComponent as IconBrilant } from './images/brilant.svg';
-import { ReactComponent as IconShop } from './images/shop.svg';
+import { ReactComponent as  WomanFlyingBallon } from '../images/woman-flying-ballon.svg';
+import { ReactComponent as IconCloud } from '../images/cloud.svg';
+import { ReactComponent as IconRocket } from '../images/rocket.svg';
+import { ReactComponent as IconBrilant } from '../images/brilant.svg';
+import { ReactComponent as IconShop } from '../images/shop.svg';
 import './home.css';
 
 let deferredPrompt;
@@ -48,7 +48,7 @@ const Home = () => {
         onClick={() => callPWA()}
         variant="pwa__install-button"
       >
-        Clique 
+        Installar PWA 
       </button>
     </div>
   );
