@@ -25,3 +25,6 @@ Audits
 #### Dúvidas, sugestões ou críticas entre em contato no twitter:
 https://twitter.com/taina_renata_
 
+
+#### Link do evento:
+https://www.techsummitmovile.com/
