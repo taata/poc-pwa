@@ -1,5 +1,7 @@
+#### Site simples para demonstrar o desenvolvimento da PWA;
+
 Pequena pock de PWA criada com o create-react-app apresentada no Tech Summit Movile dia 09/11/2019.
-!(https://imgur.com/lWAyd5f)
+Imagem final do projeto: https://imgur.com/lWAyd5f
 
 
 #### O que é preciso para criar uma PWA
@@ -22,3 +24,4 @@ Audits
 
 #### Dúvidas, sugestões ou críticas entre em contato no twitter:
 https://twitter.com/taina_renata_
+
