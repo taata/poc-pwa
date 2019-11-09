@@ -21,7 +21,7 @@ Audits
 2. yarn server
 
 
-#### Dúvidas, sugestões ou críticas entre em contato no twitter:
+#### Dúvidas sobre PWA/iFood ou feedbacks da apresentação, podem entrar em contato no twitter:
 https://twitter.com/taina_renata_
 
 
