@@ -22,7 +22,7 @@ Audits
 
 
 #### Dúvidas sobre PWA/iFood ou feedbacks da apresentação, podem entrar em contato no twitter:
-https://twitter.com/taina_renata_
+[@taina_renata_](https://twitter.com/taina_renata_)
 
 
 #### Link do evento:
