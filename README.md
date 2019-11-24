@@ -1,15 +1,29 @@
-1. Install dependences
-      `yarn install`
+#### Site simples para demonstrar o desenvolvimento da PWA;
 
-2. Start server
-    `yarn server`
+Pequena poc de PWA criada com o create-react-app apresentada no Tech Summit Movile dia 09/11/2019.
+
+
+#### O que é preciso para criar uma PWA
+```
+* Service Worker * 
+HTTPS
+Manifest
+Documentação do Google
+Audits
+```
+
+#### Link da apresentação (parte do código):
+ https://drive.google.com/open?id=1pZyrCtSQ6TumMksLx0u5ePwMTAvAK3SO
  
-3. Open localhost after Serving
-    Maybe be:
-    `- Local:            http://localhost:5000`     
+ 
+#### Como rodar
+1. Rodar yarn install
+2. yarn server
 
-4. Open inspector elements
-    `Mode responsive`
-    
-5. Go to tab Audits
-  `Run audits`
+
+#### Dúvidas sobre PWA/iFood ou feedbacks da apresentação, podem entrar em contato no twitter:
+[@taina_renata_](https://twitter.com/taina_renata_)
+
+
+#### Link do evento:
+https://www.techsummitmovile.com/
